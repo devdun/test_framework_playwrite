@@ -5,12 +5,11 @@ const config: PlaywrightTestConfig = {
   retries: 2,
   testDir: './tests',
   use: {
-    headless: true,
+    headless: false,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
-    baseURL: 'https://www.saucedemo.com',
   },
   projects: [
     {
