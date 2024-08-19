@@ -8,12 +8,15 @@
       "forceConsistentCasingInFileNames": true,
       "outDir": "./dist",
       "rootDir": "./",
-      "types": ["node", "jest", "playwright"]
+      "types": ["node", "playwright"],
+      "resolveJsonModule": true,  // Add this line
+      "allowSyntheticDefaultImports": true  // Add this line if needed
     },
     "include": [
       "tests/**/*.ts",
       "pages/**/*.ts",
-      "utils/**/*.ts"
+      "utils/**/*.ts",
+      "data/**/*.json"  // Optionally include JSON files
     ]
   }
   
