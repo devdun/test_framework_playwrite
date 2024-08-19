@@ -54,6 +54,7 @@ dist/
 build/
 out/
 /test-results/
+/playwright-report/
 
 # Dependency directories
 jspm_packages/
