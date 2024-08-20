@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Sauce Labs Backpack",
+        "addToCartId": "add-to-cart-sauce-labs-backpack",
+        "removeId": "remove-sauce-labs-backpack"
+    },
+    {
+        "name": "Sauce Labs Bike Light",
+        "addToCartId": "add-to-cart-sauce-labs-bike-light",
+        "removeId": "remove-sauce-labs-bike-light"
+    },
+    {
+        "name": "Sauce Labs Bolt T-Shirt",
+        "addToCartId": "add-to-cart-sauce-labs-bolt-t-shirt",
+        "removeId": "remove-sauce-labs-bolt-t-shirt"
+    }
+]
