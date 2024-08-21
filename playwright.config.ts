@@ -2,7 +2,7 @@ import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   timeout: 30000, // Maximum time for each test to run
-  retries: 2, // Number of retries for a test in case it fails
+  retries: 1, // Number of retries for a test in case it fails
   testDir: './tests', // Directory where test files are located
   use: {
     headless: false, // Run tests in headless mode by default
@@ -20,9 +20,17 @@ const config: PlaywrightTestConfig = {
       name: 'firefox', // Project name for Firefox browser
       use: { browserName: 'firefox' }, // Configuration for Firefox
     },
+    // Please activate this, if needed
+    // {
+    //   name: 'webkit', // Project name for WebKit (Safari) browser
+    //   use: { browserName: 'webkit' }, // Configuration for WebKit
+    // },
     {
-      name: 'webkit', // Project name for WebKit (Safari) browser
-      use: { browserName: 'webkit' }, // Configuration for WebKit
+      name: 'Microsoft Edge', // Project name for Microsoft Edge browser
+      use: { 
+        browserName: 'chromium', // Edge is based on Chromium
+        channel: 'msedge' // Specify Microsoft Edge
+      },
     },
   ],
   outputDir: 'test-results/', // Directory to save test results
